@@ -7,6 +7,6 @@ from django.db import models
 
 class Entry(models.Model):
     title = models.CharField(max_length=50)  # TODO: Set maximum char length for the title in angular app
-    datePub = models.DateTimeField(auto_now_add=True)
+    datePub = models.DateTimeField(auto_now_add=True)  # Date published
     body = models.TextField()
 
